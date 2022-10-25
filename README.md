@@ -7,7 +7,8 @@ A jobseeker's app created with React, Node, Express and PostgreSQL
 * [Live Site](#live-site)
 * [Introduction](#introduction)
 * [Technologies](#technologies)
-* [Launch Instruction](#launch-instructions)
+* [Launch Instructions](#launch-instructions)
+* [User Views](#user-views)
 * [About the Developer](#about-the-developer)
 
 ## Live site
@@ -37,7 +38,7 @@ To install and run this project locally:
     - Backend runs on port 3001
     - Frontend runs on port 3000
 
-## Views
+## User Views
 
 Homepage for new user:
 
