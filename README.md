@@ -1,35 +1,32 @@
-# Getting Started with Create React App
+# Happily Hired!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A jobseeker's app created with React, Node, Express and PostgreSQL
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+Add content here
 
-### `npm start`
+### Live site
+---
+[Happily Hired](https://happily-hired.surge.sh/) 
+To use our demo, enter username: *demo*, password: *demo123*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Introduction
+---
+This app was the first full-stack React app that I designed and built as an assignment for my bootcamp program. The company and job information in the database is fictional, but the app is otherwise fully functional.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies
+---
+-React 18.2.0
+-Node 16.17.1
+-Express 4.17.1
+-Postgres 14
 
-### `npm test`
+### Launch
+---
+To run this project locally:
+-Make a clone of the backend repo: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
