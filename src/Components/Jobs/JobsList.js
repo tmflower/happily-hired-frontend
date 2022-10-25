@@ -56,9 +56,10 @@ const JobsList = ({ applications, addJob }) => {
     return (
         <div>
             <img src={balloon3} className="balloon4" alt="yellow hot air balloon with girl"/>
-            <h3>Check out our current job openings!</h3>
+            <h3 className="jobs-title">Check out our current job openings!</h3>
             <img src={balloon5} className="balloon6" alt="yellow hot air balloon with girl"/>
             { username === null ? <div><h3>You must log in to see our jobs.</h3><button onClick={forceLogin}>Log In</button></div> :
+            
             <div>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="searchTerm">Search for a job
@@ -71,6 +72,8 @@ const JobsList = ({ applications, addJob }) => {
                         onChange={handleChange}/></label>
                     <button>Submit</button> 
                 </form> 
+                {!jobs.length ? <p>Sorry, we don't have any job matches for that today.</p> :
+                <div>
                 {jobs.map(job => (<JobCard 
                                     id={job.id}
                                     title={job.title} 
@@ -80,6 +83,7 @@ const JobsList = ({ applications, addJob }) => {
                                     key={job.id}
                                     applications={applications}
                                     addJob={addJob} />))}
+                </div>}
             </div>
             }
         </div>

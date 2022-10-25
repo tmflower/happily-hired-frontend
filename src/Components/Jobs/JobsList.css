@@ -26,3 +26,9 @@
         top: 10%;
     }
 }
+
+@media (min-width: 1024px) {
+    .jobs-title {
+        font-size: 3em;
+    }
+}

@@ -11,8 +11,8 @@
         margin: 5px;
     }
     
-    signup-button {
-        margin: 10px;
+    .signup-button {
+        margin-top: 10px;
     }
 }
 

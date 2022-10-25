@@ -34,9 +34,11 @@ const Homepage = () => {
             <h3 className="subtitle">We'll help you find the job of your dreams.</h3>
             <p className="greeting">{greeting}</p>
             {!username && !newUsername ? 
-            <div className="home-buttons"><NavLink to="/login"><button>Log in</button></NavLink><NavLink to="/signup"><button>Sign up</button></NavLink>
+            <div><NavLink to="/login"><button className="home-button">Log in</button></NavLink><NavLink to="/signup"><button className="home-button">Sign up</button></NavLink>
             <p className="demo">Try a demo: username "demo", password "demo123"</p></div>
-            : null}
+            : 
+            <div className="home-buttons"><NavLink to="/companies"><button className="home-button">Our companies</button></NavLink><NavLink to="/jobs"><button className="home-button">Our jobs</button></NavLink>
+            </div>}
             </div>
         </div>
     )

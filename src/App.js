@@ -62,7 +62,6 @@ function App() {
     await JoblyApi.registerUser(newUser);
     setCurrentUsername(newUser.username);
     setToken(JoblyApi.token);
-    navigate("/", { replace: true });
   }
 
   // removes the currentUser and their token from state & local storage

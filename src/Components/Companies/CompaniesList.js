@@ -71,7 +71,9 @@ const CompaniesList = ({ applications }) => {
                     onChange={handleChange}/>
                     </label>
                     <button>Submit</button> 
-                </form>            
+                </form> 
+                {!companies.length ? <p>Sorry, we don't have information about that company.</p> :  
+                <div>         
                     {companies.map(c => (<NavLink 
                     to={`/companies/${c.handle}`} 
                     key={c.handle}><CompanyCard 
@@ -79,6 +81,7 @@ const CompaniesList = ({ applications }) => {
                     description={c.description} 
                     key={c.handle}
                     applications={applications} /></NavLink>))} 
+                </div>}
             </div>
             }                                        
         </div>

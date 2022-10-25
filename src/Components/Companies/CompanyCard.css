@@ -33,3 +33,15 @@
         font-size: 1em;
     }
 }
+
+@media (min-width: 1024px) {
+    .company-card {
+        margin: 30px 250px;
+    }
+    .company-name {
+        font-size: 2em;
+    }
+    .company-description {
+        font-size: 1.3em;
+    }
+}

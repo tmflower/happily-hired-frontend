@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 // displays a form that allows user to login to an existing account
 // when submitted, the login function sets this user and their token as current in state
 const LoginForm = ({ login }) => {
+    const navigate = useNavigate();
 
     const initial_state = {
         username: '',
@@ -24,6 +26,7 @@ const LoginForm = ({ login }) => {
         const user = { username, password };
         login(user);
         setFormData(initial_state);
+        navigate("/", { replace: true });
     }
     return (
         <div>

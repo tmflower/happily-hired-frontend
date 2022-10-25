@@ -25,6 +25,11 @@
         font-size: 2em;
         color: rgb(87, 54, 238);
     }
+    .home-button {
+        width: 130px;
+        background-color: rgb(87, 54, 238, .8);
+        color: rgb(255, 200, 0);
+    }
 }
 
 @media (min-width: 768px) {
@@ -38,6 +43,22 @@
     }
     .demo {
         margin-top: 3em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 7em;
+    }
+    .greeting {
+        font-size: 3em;
+    }
+    .home-button {
+        font-size: 1.5em;
+        width: 200px;
+    }
+    .demo {
+        font-size: 1.5em;
     }
 }
 

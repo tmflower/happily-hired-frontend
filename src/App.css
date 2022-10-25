@@ -21,3 +21,23 @@ button:hover {
   background-color: rgb(87, 54, 238, .15);
   color: rgb(87, 54, 238);
 }
+
+input {
+  margin: 5px;
+  text-align: left;
+  padding: 2px;
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  form input, form label {
+    font-size: 1.2em;
+  }
+}

@@ -9,10 +9,11 @@
     
     input {
         margin: 5px;
+        text-align: left;
+        padding: 2px;
     }
     
     .login-button {
-        margin-right: 20%;
         margin-top: 10px;
     }
 }
@@ -21,9 +22,5 @@
     .login-form {
         margin-right: 32em;
         width: 55%;
-    }
-    .login-button {
-        margin-right: 5%;
-        margin-top: 10px;
     }
 }

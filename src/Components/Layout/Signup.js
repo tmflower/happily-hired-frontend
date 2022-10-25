@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./Signup.css";
+import { useNavigate } from "react-router-dom";
+
 
 // displays a form that allows user to enter information to create a new account
 // when submitted, the signup function sets this user and their token as current in state
 const SignupForm = ({ signup }) => {
-        
+    const navigate = useNavigate();
+
     const initial_state = {
         username: '',
         password: '',
@@ -28,6 +31,7 @@ const SignupForm = ({ signup }) => {
         signup(newUser);
         window.localStorage.setItem('newUsername', username);
         setFormData(initial_state);
+        navigate("/", { replace: true });
     }
 
     return (
@@ -43,9 +47,10 @@ const SignupForm = ({ signup }) => {
                 <label htmlFor="lastName">Last name:
                 <input type="text" name="lastName" value={lastName} id="lastName" onChange={handleChange}></input></label>
                 <label htmlFor="email">Email:
-                <input type="text" name="email" value={email} id="email" onChange={handleChange}></input></label>                
+                <input type="text" name="email" value={email} id="email" onChange={handleChange}></input></label> 
+                <button className="signup-button" onClick={handleSubmit}>Submit</button>               
             </form>
-            <button className="signup-button" onClick={handleSubmit}>Submit</button>
+            
         </div>        
     )
 }
