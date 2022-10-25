@@ -32,7 +32,7 @@ This app was the first full-stack React app that I designed and built as an assi
 
 To install and run this project locally:
 1. Install postgres if not already installed.
-2. Make a clone of the backend repo: [happily-hired-backend](https://github.com/tmflower/happily-hired-backend.git)
+2. Clone the backend repo: [happily-hired-backend](https://github.com/tmflower/happily-hired-backend.git)
 3. Create a database and seed it with fictional data: [jobly](https://github.com/tmflower/happily-hired-backend/blob/main/jobly.sql)
 4. Run npm start:
     - Backend runs on port 3001
