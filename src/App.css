@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+button {
+  font-family: 'Urbanist', sans-serif;
+  margin: 0px 4px 0px 4px;
+  padding: 10px;
+  width: 70px;
+  border-radius: 30px;
+  box-shadow: rgb(87, 54, 238, .15) 0 3px 6px -3px, rgb(87, 54, 238, .15) 0 6px 12px 0px, rgb(87, 54, 238) 0 1px 18px 0px;
+  background-color: rgb(87, 54, 238);
+  border-style: none;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(87, 54, 238, .15);
+  color: rgb(87, 54, 238);
+}

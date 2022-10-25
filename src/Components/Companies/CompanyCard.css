@@ -1,0 +1,32 @@
+@media(min-width: 280px) {
+    .company-card {
+        color: black;
+        border: 1px solid black;
+        margin: 2em;
+        border-radius: 8px;
+        background-color: white;
+    }
+    
+    .company-name {
+        font-size: 1.2em;
+        background-color: rgb(190, 188, 188);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        color: rgb(87, 54, 238);
+        margin-top: 0;
+        padding: .4em .8em;
+    }
+    
+    .company-description {
+        font-size: .8em;
+        padding: .4em .8em;        
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .company-card {
+        margin: 3em 16em;
+    }
+}

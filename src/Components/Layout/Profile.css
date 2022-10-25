@@ -1,0 +1,56 @@
+@media (min-width: 280px) {
+    .container {
+        background-image: url("../Images/balloon3.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        font-size: small;
+    }
+
+    .details {
+        margin: .2em .2em .2em 6em;
+        padding: 0;
+        text-align: left;
+    }
+
+    .heading {
+        margin: 1em 1em 1em 2em;
+    }
+
+    .profile-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20%;
+        width: 100%;
+    }
+     
+    .profile-button {
+        margin: 10px;
+    }
+    .update {        
+        margin: 1em 6em 1em 2em;
+    }
+}
+
+    
+
+
+@media (min-width: 768px) {
+    .container {
+        background-size: 60%;
+        background-repeat: repeat;
+        font-size: medium;
+    }
+    .details {
+        margin-left: 40%;
+    }
+    .profile-form {
+        margin-left: 40%;
+    }
+    .heading {
+        margin-top: 3em;
+    }
+    .update {
+        margin-top: 3em;
+    }
+}

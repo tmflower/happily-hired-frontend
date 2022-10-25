@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+@media (min-width: 280px) {
+    .background-balloon {
+        background-image: url("../Images/balloon.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: absolute;
+        width: 100vw;
+        height: 90vh;
+    }
+    .title {
+        font-family: 'Cookie', cursive;
+        font-size: 4em;
+        margin-top: 4rem;        
+        color: rgb(87, 54, 238);
+        position: flex;
+    }
+    .demo {
+        font-size: .8em;
+        color: gray;
+    }
+    .greeting {
+        font-size: 2em;
+        color: rgb(87, 54, 238);
+    }
+}
+
+@media (min-width: 768px) {
+    .background-balloon {
+        width: 100vw;
+        background-position: 25% 75%;
+    }
+    .title {
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+    .demo {
+        margin-top: 3em;
+    }
+}
+

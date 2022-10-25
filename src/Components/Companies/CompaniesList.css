@@ -1,0 +1,42 @@
+@media (min-width: 280px) {
+
+    .balloon3 {
+        display: none;
+    }
+
+    .balloon5 {
+        display: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .search-form {
+        font-size: .85em;
+    }
+    
+    input {
+        padding: 3px 0 3px 0;
+        border-radius: 5px; 
+        text-align: center;
+     }
+}
+
+@media (min-width: 768px) {
+    
+    .balloon3 {
+        display: block;
+        position: fixed;
+        width: 15%;
+        left: 6%;
+        z-index: -1;
+    }
+
+    .balloon5 {
+        display:block;
+        position: fixed;
+        width: 15%;
+        right: 6%;
+    }
+}

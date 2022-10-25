@@ -1,0 +1,15 @@
+@media(min-width: 280px) {
+    .company-info {
+        border: 1px solid black;
+        margin: 1em;
+        border-radius: 8px;
+        background-color: rgb(190, 188, 188);
+        color: rgb(87, 54, 238);
+    }
+}
+
+@media(min-width: 768px) {
+    .company-info {
+        margin: 1em 8em;
+    }
+}

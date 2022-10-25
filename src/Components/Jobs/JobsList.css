@@ -1,0 +1,28 @@
+@media (min-width: 280px) {
+    .balloon4, .balloon6 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .balloon4 {
+        display: block;
+        position: fixed;
+        width: 15%;
+        left: 4%;
+        z-index: -1;
+        transform: rotate(-10deg);
+        top: 12%;
+    }
+
+    .balloon6 {
+        display: block;
+        position: fixed;
+        width: 15%;
+        right: 1%;
+        z-index: -1;
+        transform: rotate(20deg);
+        top: 10%;
+    }
+}

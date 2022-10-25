@@ -1,0 +1,55 @@
+@media (min-width: 280px) {
+    .navbar {
+        padding: 10px;
+        background-color: rgb(87, 54, 238);   
+        box-shadow: 2px 2px 2px 2px rgb(87, 54, 238, .50);
+        margin-bottom: 4px;
+    }
+    
+    .link {
+        display: flex;
+        width: fit-content;
+        color: white;
+        text-decoration: none; 
+    }
+    .link:hover {
+        background-color: rgb(255, 200, 0);
+        color: rgb(87, 54, 238);
+        padding: 2px 6px;
+        border-radius: 10px;
+    }
+    .active {
+        color: rgb(255, 200, 0);
+    }
+    #home {
+        font-family: 'Cookie', cursive;
+        color: rgb(255, 200, 0);
+    }
+    #home:hover {
+        background-color: rgba(255, 255, 255, 0.297);
+        padding: 2px 6px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .navlinks {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+    .link {
+        margin: 0px 10px 0px 10px;
+    }
+
+    #right-links {
+        display: flex;
+    }
+    #home {
+        font-size: 1.5em;
+    }
+
+}
+
