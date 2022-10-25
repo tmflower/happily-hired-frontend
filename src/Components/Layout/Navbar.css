@@ -38,7 +38,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        font-size: small;
+        font-size: medium;
     }
     .link {
         margin: 0px 10px 0px 10px;

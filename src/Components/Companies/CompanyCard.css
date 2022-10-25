@@ -29,4 +29,7 @@
     .company-card {
         margin: 3em 16em;
     }
+    .company-description {
+        font-size: 1em;
+    }
 }

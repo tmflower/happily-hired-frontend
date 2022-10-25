@@ -38,5 +38,6 @@
         position: fixed;
         width: 15%;
         right: 6%;
+        z-index: -1;
     }
 }
