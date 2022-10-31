@@ -5,8 +5,12 @@ import "./Profile.css";
 
 // displays a form allowing user to change their profile data
 const ProfileUpdateForm = ({ userDetails, setUserDetails}) => {
-
+    console.log(userDetails);
     const username = React.useContext(userContext);
+
+    // controls masking and unmasking of password field
+    const [passwordShowing, setPasswordShowing] = useState(false);
+    const toggle = () => {setPasswordShowing(!passwordShowing)}
 
     const initial_state = ({
         firstName: userDetails.firstName,
@@ -47,7 +51,6 @@ const ProfileUpdateForm = ({ userDetails, setUserDetails}) => {
                     name="firstName" 
                     value={firstName} 
                     id="firstName" 
-                    placeholder={firstName} 
                     onChange={handleChange} />
                 <label htmlFor="lastName">Last name:</label>
                 <input 
@@ -58,18 +61,23 @@ const ProfileUpdateForm = ({ userDetails, setUserDetails}) => {
                     onChange={handleChange} />
                 <label htmlFor="email">Email:</label>
                 <input 
-                    type="text" 
+                    type="email" 
                     name="email" 
                     value={email} 
                     id="email" 
                     onChange={handleChange} />
                 <label htmlFor="password">Confirm password to make changes:</label>
-                <input 
-                    type="text" 
+                <div>                    
+                    <input 
+                    type={passwordShowing ? "text" : "password"}
                     name="password" 
                     value={password} 
                     id="password" 
-                    onChange={handleChange} />
+                    onChange={handleChange} 
+                    />
+                    <i className={passwordShowing ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} onClick={toggle}></i> 
+                </div>
+                
                 <button className="profile-button">Submit</button>
             </form>
         </div>

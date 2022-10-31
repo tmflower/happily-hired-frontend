@@ -1,4 +1,7 @@
 @media (min-width: 280px) {
+    .signup-page {
+        margin-top: 10%;
+    }
 
     .signup-form {
         display: flex;
@@ -14,11 +17,24 @@
     .signup-button {
         margin-top: 10px;
     }
+
+    .eye {
+        display: inline;
+        position: absolute;
+        padding-top: 8px;
+    }
 }
 
 @media (min-width: 768px) {
     .signup-form {
         margin-right: 32em;
         width: 55%;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .eye {
+        padding-top: 12px;
     }
 }

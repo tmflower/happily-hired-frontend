@@ -12,6 +12,10 @@ const LoginForm = ({ login }) => {
         password: ''
     }
 
+    // controls masking and unmasking of password field
+    const [passwordShowing, setPasswordShowing] = useState(false);
+    const toggle = () => {setPasswordShowing(!passwordShowing)}
+
     const [formData, setFormData] = useState(initial_state);
 
     const { username, password } = formData;
@@ -29,13 +33,16 @@ const LoginForm = ({ login }) => {
         navigate("/", { replace: true });
     }
     return (
-        <div>
-            <h1>Login</h1>
+        <div className="login-page">
+            <h2>Login</h2>
             <form className="login-form" onSubmit={handleSubmit}>
-                <label htmlFor="username">Username:
-                <input type="text" name="username" value={username} id="username" onChange={handleChange} autoComplete="username"></input></label>
-                <label htmlFor="password">Password:
-                <input type="password" name="password" value={password} id="password" autoComplete="current-password" onChange={handleChange}></input></label>
+                <label htmlFor="username">Username:</label>
+                <input className="user-input" type="text" name="username" value={username} id="username" onChange={handleChange}></input>
+                <label htmlFor="password">Password:</label> 
+                <div>                   
+                    <input className="user-input" type={passwordShowing ? "text" : "password"} name="password" value={password} id="password" onChange={handleChange}></input>
+                    <i className={passwordShowing ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} onClick={toggle}></i>                                       
+                </div>                
                 <button className="login-button">Submit</button>
             </form>
         </div>

@@ -16,6 +16,10 @@ const SignupForm = ({ signup }) => {
         email: ''
     }
     
+    // controls masking and unmasking of password field
+    const [passwordShowing, setPasswordShowing] = useState(false);
+    const toggle = () => {setPasswordShowing(!passwordShowing)}
+
     const [formData, setFormData] = useState(initial_state);
 
     const { username, password, firstName, lastName, email } = formData;
@@ -35,19 +39,53 @@ const SignupForm = ({ signup }) => {
     }
 
     return (
-        <div className="signup">
+        <div className="signup-page">
             <h2>Sign up for a free account</h2>
             <form className="signup-form">
                 <label htmlFor="username">Username:
-                <input type="text" name="username" value={username} id="username" onChange={handleChange}></input></label>
+                <input 
+                    type="text" 
+                    name="username" 
+                    value={username} 
+                    id="username" 
+                    onChange={handleChange}>
+                </input></label>
                 <label htmlFor="password">Password:
-                <input type="password" name="password" value={password} id="password" onChange={handleChange}></input></label>
+                <input 
+                    type={passwordShowing ? "text" : "password"} 
+                    name="password" 
+                    value={password} 
+                    id="password" 
+                    onChange={handleChange}>
+                    </input>
+                    <div className="eye">
+                        <i className={passwordShowing ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} onClick={toggle}></i>
+                    </div>
+                     </label>
                 <label htmlFor="firstName">First name:
-                <input type="text" name="firstName" value={firstName} id="firstName" onChange={handleChange}></input></label>
+                <input 
+                    type="text" 
+                    name="firstName" 
+                    value={firstName} 
+                    id="firstName" 
+                    onChange={handleChange}>
+                    </input></label>
                 <label htmlFor="lastName">Last name:
-                <input type="text" name="lastName" value={lastName} id="lastName" onChange={handleChange}></input></label>
+                <input 
+                    type="text" 
+                    name="lastName" 
+                    value={lastName} 
+                    id="lastName" 
+                    onChange={handleChange}>
+                    </input></label>
                 <label htmlFor="email">Email:
-                <input type="text" name="email" value={email} id="email" onChange={handleChange}></input></label> 
+                <input 
+                    type="text" 
+                    name="email" 
+                    value={email} 
+                    id="email" 
+                    onChange={handleChange}>
+                    </input></label> 
                 <button className="signup-button" onClick={handleSubmit}>Submit</button>               
             </form>
             
