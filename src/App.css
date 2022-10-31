@@ -22,11 +22,6 @@ button:hover {
   color: rgb(87, 54, 238);
 }
 
-/* input {
-  margin: 5px;
-  text-align: left;
-  padding: 2px;
-} */
 @media (min-width: 768px) {
   h2 {
     font-size: 2em;
