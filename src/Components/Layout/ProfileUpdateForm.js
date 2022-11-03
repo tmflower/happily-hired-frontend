@@ -5,7 +5,7 @@ import "./Profile.css";
 
 // displays a form allowing user to change their profile data
 const ProfileUpdateForm = ({ userDetails, setUserDetails}) => {
-    console.log(userDetails);
+
     const username = React.useContext(userContext);
 
     // controls masking and unmasking of password field
